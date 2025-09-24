@@ -1,0 +1,36 @@
+.sbornikBlock {
+	position: relative;
+	margin: 40px 100px;
+	z-index: 10;
+	width: auto;
+}
+
+.tableBlock {
+	margin-bottom: 60px;
+	/*z-index: 10;*/
+}
+
+.trFraza {
+	padding-top: 10px;
+}
+
+.man {
+	width: 100px;
+	color: #999;
+}
+
+.fraza {
+	width: 770px;
+}
+
+.constBlock {
+	position: fixed;
+	width: 75%;
+	z-index: 5;
+	transform: translateX(-20%);
+	left: 50%;
+}
+
+.text {
+	margin-bottom: 10px;
+}
