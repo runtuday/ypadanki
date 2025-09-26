@@ -20,7 +20,7 @@
 }
 
 .fraza {
-	width: 770px;
+	width: 600px;
 }
 
 .constBlock {
@@ -33,4 +33,65 @@
 
 .text {
 	margin-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+
+	.sbornikBlock {
+		margin: 40px 40px;
+	}
+
+	.tableBlock {
+		margin-bottom: 45px;
+	}
+
+	.fraza {
+		width: 380px;
+	}
+
+	.constBlock {
+		transform: translate(-50%, -50%);
+		left: 70%;
+		top: 50%;
+		width: 100%;
+		opacity: 0.4;
+	}
+}
+
+@media (max-width: 750px) {
+
+	.sbornikBlock {
+		margin: 40px 40px;
+	}
+
+	.tableBlock {
+		margin-bottom: 40px;
+	}
+
+	.constBlock {
+		transform: translate(-50%, -50%);
+		left: 50%;
+		top: 50%;
+		width: 150%;
+		opacity: 0.3;
+	}
+}
+
+@media (max-width: 550px) {
+
+	.sbornikBlock {
+		margin: 40px 40px;
+	}
+
+	.tableBlock {
+		margin-bottom: 35px;
+	}
+
+	.constBlock {
+		transform: translate(-50%, -50%);
+		left: 50%;
+		top: 50%;
+		width: 150%;
+		opacity: 0.3;
+	}
 }
