@@ -12,4 +12,14 @@ $(document).ready(function(){
    		window.location.href = "html/galery.html"
    });
 
+   $(".menu").click(() => {
+      $(".mobile-menu").css({
+         display: 'block'
+      });
+   });
+   $(".quitMenu").click(() => {
+      $(".mobile-menu").css({
+         display: 'none'
+      });
+   });
 });
