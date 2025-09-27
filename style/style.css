@@ -101,6 +101,40 @@ button:hover {
 		position: absolute;
 		right: 30px;
 		display: none;
+		margin-top: 2px;
+	}
+
+	.menuIco {
+		position: relative;
+		width: 22px;
+		height: 20px;
+	}
+
+	.menuIco span{
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 3px;
+		background-color: #fff;
+		left: 0;
+		border-radius: 3px;
+	}
+
+	.menuIco:active span{
+		background-color: #f00;
+	}
+
+	.menuIco span:nth-child(1) {
+	    top: 0;
+	}
+
+	.menuIco span:nth-child(2) {
+	    top: 50%;
+	    transform: translateY(-50%);
+	}
+
+	.menuIco span:nth-child(3) {
+	    bottom: 0;
 	}
 
 	.startPage {
@@ -166,6 +200,83 @@ button:hover {
 		margin: 100px 200px;
 	}
 
+	.mobile-menu {
+		background-color: #000;
+		position: fixed;
+		display: none;
+		width: 400px;
+		height: 100vh;
+		z-index: 20;
+		border-right: 1px solid #555;
+	}
+
+	.mobile-menu .row {
+		position: relative;
+		top: 60px;
+	}
+
+	.mobile-menu .logo {
+		font-size: 21px;
+		position: absolute;
+		left: 10px;
+		/*top: 20px;*/
+	}
+
+	.quitMenu {
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		right: 10px;
+	}
+
+	.closeButton {
+		width: 30px;          /* Ширина кнопки */
+	    height: 30px;         /* Высота кнопки */
+	    background: transparent; /* Прозрачная кнопка */
+	    position: relative;   /* Необходим относительное позиционирование */
+	    cursor: pointer;      /* Изменяем курсор на руку */
+	}
+
+	.closeButton span {
+		position: absolute;
+		top: 50%;
+		width: 30px;
+		height: 3px;
+		background-color: #fff;
+		border-radius: 3px;
+	}
+
+	.closeButton span:nth-child(1) {
+		transform: rotate(45deg);
+	}
+
+	.closeButton span:nth-child(2) {
+		transform: rotate(-45deg);
+	}
+
+	.mobile-menu .navigationBlock {
+		display: block;
+		font-size: 26px;
+		margin: 150px 60px;
+	}
+
+	.mobile-menu .navigationButton {
+		padding: 10px;
+		text-align: center;
+		border: 3px solid #f00;
+		border-left: none;
+		border-radius: 7px 20px 20px 7px;
+		margin-bottom: 25px;
+	}
+
+	.mobile-menu .active {
+		border-color: #fff;
+	}
+
+	.mobile-menu a:hover {
+		color: #fff;
+	}
+
 @media (max-width: 1700px) {
 
 	.doBlock {
@@ -185,8 +296,13 @@ button:hover {
 }
 
 @media (max-width: 1150px) {
+
 	body {
 		font-size: 15px;
+	}
+
+	.row {
+		font-size: 21px;
 	}
 
 	.menu {
@@ -411,3 +527,5 @@ button:hover {
 		margin: 40px 40px;
 	}
 }
+
+
