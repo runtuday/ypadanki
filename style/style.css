@@ -59,6 +59,8 @@ button:hover {
 		background-color: #000;
 		color: #fff;
 		border-bottom: 1px solid #bbb;
+		z-index: 100;
+		position: relative;
 	}
 
 	.row {
@@ -68,9 +70,20 @@ button:hover {
 		margin: 0 35px;
 	}
 
-	.logo {
+	.rowBlock {
+		position: relative;
 		display: block;
-		max-width: 100px;
+		height: 25px;
+		width: 25px;
+	}
+
+	.logo {
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		transform: translate(-50%, -50%);
+		top: 50%;
+		left: 50%;
 	}
 
 	.logo a:hover {
@@ -177,22 +190,40 @@ button:hover {
 		margin-right: auto;
 		width:200px;
 		text-align: center;
+		z-index: 20;
 	}
 
 	.radius {
 		position: relative;
-		border-radius: 20px;
+		border-radius: 25px;
 		transform: translateY(0%);
 		transition: 0.3s;
+		z-index: 15;
 	}
 
 	.hoverGo {
 		position: absolute;
 		width: 100%;
+		z-index: 20;
+		transition: 0.3s;
 	}
 
-	.radius:hover {
-		transform: translateY(40px);
+	.hoverGoText {
+		position: absolute;
+		width: 100%;
+		left: 50%;
+		transform: translate(-50%, 302px);
+		text-align: center;
+		padding: 15px 0;
+		background-color: #000;
+		color: #fff;
+		border-radius: 0 0 25px 25px;
+		border-bottom: 2px solid #d00;
+		z-index: 20;
+	}
+
+	.hoverGo:hover {
+		transform: translateY(-40px);
 	}
 
 	.senterText {
@@ -203,11 +234,13 @@ button:hover {
 	.mobile-menu {
 		background-color: #000;
 		position: fixed;
-		display: none;
+		/*display: none;*/
 		width: 400px;
 		height: 100vh;
-		z-index: 20;
+		z-index: 200;
 		border-right: 1px solid #555;
+		transform: translateX(-100%);
+		transition: 0.5s;
 	}
 
 	.mobile-menu .row {
@@ -219,7 +252,6 @@ button:hover {
 		font-size: 21px;
 		position: absolute;
 		left: 10px;
-		/*top: 20px;*/
 	}
 
 	.quitMenu {
@@ -292,6 +324,10 @@ button:hover {
 
 	.goToButton {
 		width: 150px;
+	}
+
+	.hoverGoText {
+		transform: translate(-50%, 225px);
 	}
 }
 
@@ -369,6 +405,11 @@ button:hover {
 		transform: none;
 	}
 
+	.hoverGoText {
+		transform: translate(-50%, 300px);
+		font-size: 21px;
+	}
+
 	.senterText {
 		margin: 80px 120px;
 	}
@@ -441,6 +482,11 @@ button:hover {
 
 	.radius:hover {
 		transform: none;
+	}
+
+	.hoverGoText {
+		transform: translate(-50%, 225px);
+		font-size: 19px;
 	}
 
 	.senterText {
@@ -521,6 +567,11 @@ button:hover {
 
 	.radius:hover {
 		transform: none;
+	}
+
+	.hoverGoText {
+		transform: translate(-50%, 180px);
+		font-size: 17px;
 	}
 
 	.senterText {

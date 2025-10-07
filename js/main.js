@@ -14,12 +14,12 @@ $(document).ready(function(){
 
    $(".menu").click(() => {
       $(".mobile-menu").css({
-         display: 'block'
+         transform: "translateX(0%)"
       });
    });
    $(".quitMenu").click(() => {
       $(".mobile-menu").css({
-         display: 'none'
+         transform: "translateX(-100%)"
       });
    });
 });

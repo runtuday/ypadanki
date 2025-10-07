@@ -7,7 +7,6 @@
 
 .tableBlock {
 	margin-bottom: 60px;
-	/*z-index: 10;*/
 }
 
 .trFraza {
@@ -25,40 +24,28 @@
 
 .constBlock {
 	position: fixed;
-	width: 75%;
-	z-index: 5;
-	transform: translateX(-20%);
-	left: 50%;
+	width: 1500px;
+	z-index: 0;
+	transform: translate(250px, -50%);
+	right: 0;
+	top: 50%;
 }
 
 .text {
 	margin-bottom: 10px;
 }
 
-@media (max-width: 1200px) {
-
-	.sbornikBlock {
-		margin: 40px 40px;
-	}
-
-	.tableBlock {
-		margin-bottom: 45px;
-	}
-
-	.fraza {
-		width: 380px;
-	}
-
+@media (max-width: 1500px) {
 	.constBlock {
 		transform: translate(-50%, -50%);
-		left: 70%;
+		left: 50%;
 		top: 50%;
 		width: 100%;
-		opacity: 0.4;
+		opacity: 0.25;
 	}
 }
 
-@media (max-width: 750px) {
+@media (max-width: 850px) {
 
 	.sbornikBlock {
 		margin: 40px 40px;
@@ -69,9 +56,6 @@
 	}
 
 	.constBlock {
-		transform: translate(-50%, -50%);
-		left: 50%;
-		top: 50%;
 		width: 150%;
 		opacity: 0.3;
 	}
